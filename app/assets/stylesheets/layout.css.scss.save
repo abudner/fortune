@@ -1,0 +1,31 @@
+$html-background-color;
+/*
+   ==|== layout primary styles =================================================
+   Author:
+   ==========================================================================
+*/
+html {
+  background: $html-background-color;
+}
+// http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+// width 600px approx. 60 characters per line
+div[role="main"] {
+  width: 600px;
+  margin: 0 auto 18px;
+  padding: 2px 18px 18px 18px;
+  background: white;
+}
+header {
+  width: 600px;
+  margin: 0 auto;
+  padding: 18px;
+  background-color: darken($html-background-color, 32%);
+  color: #FFF;
+  h1 {
+    font-size: 140%;
+  }
+}

@@ -1,0 +1,30 @@
+<% title "Wszystkie cytaty" %>
+<%= form_tag forts_path, :method => :get,:remote=>true, :id => "forts_search" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+<% @forts.each do |fort| %>
+<article class="index">
+  <div class="attribute">
+    <span class="name">Autor</span>
+    <span class="value"><%= fort.source %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Cytat</span>
+    <span class="value"><%= fort.body %></span>
+  </div>
+    <div class="links">
+    <%= link_to 'Pokaż', fort %> |
+    <%= link_to 'Edytuj', edit_fort_path(fort) %> |
+    <%= link_to 'Usuń', fort, confirm: 'Jesteś pewny?', method: :delete %>
+  </div>
+</article>
+<% end %>
+
+<div class="link">
+  <%= link_to 'Nowa Fortunka', new_fort_path %>
+</div>
+
+<%= paginate @forts %>

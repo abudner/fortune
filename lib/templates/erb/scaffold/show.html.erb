@@ -1,0 +1,18 @@
+<%% title "Show <%= singular_table_name %>" %>
+
+<%% if notice -%>
+<div id="notice"><%%= notice %></div>
+<%% end -%>
+
+<article class="single">
+<% attributes.each do |attribute| -%>
+  <div class="attribute">
+    <span class="name"><%= attribute.human_name %></span>
+    <span class="value"><%%= @<%= singular_table_name %>.<%= attribute.name %> %></span>
+  </div>
+<% end -%>
+  <div class="link">
+    <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
+    <%%= link_to 'Back', <%= index_helper %>_path %>
+  </div>
+</article>
