@@ -1,30 +1,45 @@
-<% title "Wszystkie cytaty" %>
-<%= form_tag forts_path, :method => :get,:remote=>true, :id => "forts_search" do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-<% end %>
+<h2 class ="title"><% title "ALL FORTUNES" %></h2>
+
+
 <% @forts.each do |fort| %>
 <article class="index">
-  <div class="attribute">
-    <span class="name">Autor</span>
+  <div class="post">
+
+
+    <span class="name">Author : </span>
     <span class="value"><%= fort.source %></span>
-  </div>
-    <div class="attribute">
-    <span class="name">Cytat</span>
+   
+
+</div>
+    <div class="post">
+    
+<p class="bylinee">
+<span class="name">Fotrune : </span>
     <span class="value"><%= fort.body %></span>
+</p>
+
   </div>
+
     <div class="links">
-    <%= link_to 'Pokaż', fort %> |
-    <%= link_to 'Edytuj', edit_fort_path(fort) %> |
-    <%= link_to 'Usuń', fort, confirm: 'Jesteś pewny?', method: :delete %>
+    <%= link_to 'Show', fort %> |
+    <%= link_to 'Edit', edit_fort_path(fort) %> |
+    <%= link_to 'Delete', fort, confirm: 'Are you sure?', method: :delete %>
   </div>
 </article>
 <% end %>
 
+
+<div id="sidebar">
+<ul>
+<li>
+
 <div class="link">
-  <%= link_to 'Nowa Fortunka', new_fort_path %>
+ <h2> <%= link_to 'Add New Fortune', new_fort_path %> </h2>
+</div>
+</li>
+</ul>
 </div>
 
-<%= paginate @forts %>
+<div id="paginator">
+<%=paginate @forts %>
+</div>

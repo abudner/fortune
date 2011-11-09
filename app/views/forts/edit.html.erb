@@ -1,10 +1,9 @@
-<% title "Edytowanie fortunki :)" %>
+<% title "Edit Fortune :)" %>
 
 <div class="form edit">
   <%= render 'form' %>
   <div class="link">
 
-<div class='button'><%= link_to 'Pokaż', @fort %></div> 
-<div class='button'><%= link_to 'Powrót', forts_path %></div>
+<div class='link'><%= link_to 'Show', @fort %> | <%= link_to 'Back', forts_path %></div>
   </div>
 </div>

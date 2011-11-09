@@ -3,14 +3,17 @@ class FortsController < ApplicationController
   # GET /forts.xml
 
   def index
-    @forts = Fort.page(params[:page]).per(2)
-  
+    @forts = Fort.search(params[:search]).order(:source).page(params[:page]).per(2)
+    
+
+   respond_with(@forts)
 end
 
   # GET /forts/1
   # GET /forts/1.xml
   def show
     @fort = Fort.find(params[:id])
+   
     @comment = Comment.new
 
   end
@@ -33,7 +36,7 @@ end
     @fort = Fort.new(params[:fort])
 
  if @fort.save
-      redirect_to @fort, notice: 'Cytat zostal dodany :)'
+      redirect_to @fort, notice: 'Fortune was successfully crated :)'
     else
       render action: "new"
     end
@@ -44,7 +47,7 @@ end
   def update
     @fort = Fort.find(params[:id])
      if @fort.update_attributes(params[:fort])
-      redirect_to @fort, notice: 'Cytat zostal zaktualizowany :)'
+      redirect_to @fort, notice: 'Fortune was successfully updated :)'
     else
       render action: "edit"
     end
@@ -57,4 +60,14 @@ end
     @fort.destroy
      redirect_to forts_url
   end
+    def self.search(search)  
+      if search  
+        find(:all, :conditions => ['name LIKE ?', "%#{search}%"])  
+      else  
+        find(:all)  
+      end  
+    end  
+
+
+
 end

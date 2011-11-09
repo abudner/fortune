@@ -1,0 +1,5 @@
+// render _fort.html.erb partial
+$("#forts").html("<%= escape_javascript(render(@forts)) %>");
+// modify pagination links
+$('#paginator').html('<%= escape_javascript(paginate(@forts, :remote => true).to_s) %>');
+

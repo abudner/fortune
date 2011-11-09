@@ -1,0 +1,423 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #B4F4FF url(images/img01.jpg) repeat-x left top;
+	line-height: 25px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #5698A3;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	color: #337884;
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 20px; }
+
+h3 { }
+
+p, ul, ol {
+	margin-top: 0;
+	text-align: justify;
+	font-weight: normal;
+}
+
+ul, ol {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+blockquote { }
+
+a { color: #80A000; }
+
+a:hover { text-decoration: none; }
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 7px 30px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+hr { display: none; }
+
+.list1 {
+}
+
+.list1 li {
+	float: left;
+	line-height: normal;
+}
+
+.list1 li img {
+	margin: 0 30px 30px 0;
+}
+
+.list1 li.alt img {
+	margin-right: 0;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+/* Header */
+
+#header-wrapper {
+	width: 900px;
+	height: 143px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#header {
+	width: 900px;
+	height: 92px;
+	margin: 0px auto;
+	background: url(images/img02.gif) no-repeat left top;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	height: 52px;
+	margin: 0px auto;
+	padding: 40px 0px 0px 0px;
+}
+
+#logo h1 {
+	float: left;
+	margin: 0;
+	padding: 0px 0px 0px 40px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font: bold 34px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#logo h1 a {
+	color: #FFFFFF;
+}
+
+#logo h2 {
+	float: left;
+	padding: 10px 0px 0px 20px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-size: 14px;
+	color: #E4EEB3;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #E4EEB3;
+}
+
+/* Menu */
+
+#menu {
+	width: 900px;
+	height: 51px;
+	margin: 0px auto;
+	padding-left: 40px;
+	background: url(images/img03.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	padding: 12px 20px 0px 22px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-weight: normal;
+	color: #D7E6A2;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#menu .first a {
+	background: none;
+	padding-left: 0px;
+}
+
+
+/* Search */
+
+#search {
+	float: right;
+	width: 235px;
+	padding: 50px 40px 0px 0px;
+}
+
+#search form {
+	margin: 0 20px 0 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	margin: 0 20px 0 0;
+}
+
+#search input {
+	float: left;
+}
+
+#search-text {
+	width: 235px;
+	height: 22px;
+	padding: 3px 0px 0px 26px;
+	background: url(images/img10.jpg) no-repeat left top;
+	border: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #E4EEB3;
+}
+
+#search-submit {
+	float: left;
+	width: 34px;
+	height: 29px;
+	background: url(images/img17.jpg) no-repeat left top;
+	border: none;
+	color: #636363;
+}
+
+/* Page */
+
+#page {
+	width: 870px;
+	margin: 0px auto;
+	border: 15px solid #FFFFFF;
+	background: #FFFFFF url(images/img04.gif) repeat-x left top;
+}
+
+#page-bgcontent {
+	padding: 40px 25px 0px 25px;
+	background: url(images/img04.gif) repeat-x left top;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 535px;
+}
+
+#banner {
+	width: 870px;
+	margin: 0px auto;
+	padding-bottom: 5px;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 25px;
+}
+
+.post .title {
+	padding: 26px 0px 0px 0px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-size: 34px;
+	font-weight: normal;
+}
+
+.post .title h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.post .byline {
+	padding-top: 6px;
+	letter-spacing: -1px;
+	font-size: 20px;
+	color: #74C6D5;
+}
+
+.post strong {
+	color: #9B9A9A;	
+}
+
+.post .meta {
+	height: 32px;
+	padding-top: 6px;
+	padding-left: 25px;
+	background: url(images/img06.jpg) repeat-x left top;
+}
+
+.post .meta a { }
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+}
+
+.post .links {
+	padding: 0px 30px 0px 0px;
+}
+
+.post .links .comments {
+	padding-left: 20px;
+	background: url(images/img07.gif) no-repeat left 3px;
+}
+
+.post .links .permalink {
+	padding-left: 17px;
+	background: url(images/img08.gif) no-repeat left 3px;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 238px;
+}
+
+#sidebar ul {
+	margin: 0px;
+	list-style: none;
+	line-height: normal;
+	border: none;
+}
+
+#sidebar li {
+	margin-bottom: 30px;
+}
+
+#sidebar li ul {
+	line-height: 200%;
+	padding: 0px;
+	background: url(images/img12.jpg) no-repeat left top;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 7px 0px;
+	background: url(images/img09.jpg) repeat-x left bottom;
+}
+
+#sidebar p {
+	margin: 0;
+}
+
+#sidebar h2 {
+	width: 190px;
+	height: 26px;
+	padding: 20px 30px 10px 0px;
+	background: url(images/img11.jpg) no-repeat left top;
+	letter-spacing: -1px;
+	text-align: left;
+	text-transform: lowercase;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+
+#sidebar p {
+	line-height: 200%;
+	padding-bottom: 20px;
+}
+
+#sidebar a {
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar caption {
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+#calendar table {
+	width: 100%;
+	border-collapse: collapse;
+	border-right: 1px solid #F5F2EF;
+}
+
+#calendar thead th {
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #F5F2EF;
+	border-left: 1px solid #F5F2EF;
+	background: #F5F2EF;
+}
+
+#calendar tbody td {
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #F5F2EF;
+	border-left: 1px solid #F5F2EF;
+}
+
+#calendar tfoot td {
+	padding: 5px;
+}
+
+#calendar tfoot #next {
+	text-align: right;
+}
+
+#calendar #today {
+	background: #E7F1E1;
+}
+
+/* Footer */
+
+#footer {
+	height: 100px;
+	margin: 0px auto;
+	padding: 0px;
+	background: url(images/img04.gif) repeat-x left top;
+}
+
+#footer p {
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+	text-transform: lowercase;
+	line-height: normal;
+	font-size: 11px;
+	color: #A2CAD1;
+}
+
+#footer a {
+	color: #A2CAD1;
+}

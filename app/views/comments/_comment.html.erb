@@ -1,11 +1,11 @@
-<p><i>Autor:</i> <%= comment.author %></p>
-<div class="comment"><i>Komentarz:</i>
-  <%= comment.body %>
+<div class= "post">
+<p><i>Author : </i> 
+<%= comment.author %></p>
+<div class="comment"><p class="bylinee"><i>Comment : </i>
+  <%= comment.body %></p>
+</div>
 </div>
 <p>
-  <%= link_to "Usuń", [@fort, comment], :confirm =>('helpers.data.sure'), :method => :delete %>
-</p>
-<p>
-<%= link_to 'Edytuj', edit_fort_comment_path(@fort, comment) %>
-</p>
+  <%= link_to "Delete", [@fort, comment], :confirm =>('helpers.data.sure'), :method => :delete %> | <%= link_to 'Edit', edit_fort_comment_path(@fort, comment) %>
 
+</p>
