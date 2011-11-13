@@ -46,26 +46,17 @@
      <h2>by abudner </h2>  
 </div>
    
- <div id="search">
-
-<fieldset>
-
-
-<%= form_tag forts_path,:method => "GET",:remote=>true, :id => "text_field" do %>
-</fieldset>
-
+ 
+<div id="search">
+<%= form_tag forts_path, :method => :get, :id => "forts_search" do %>
   <p>
-    <%=text_field :search, params[:search] %>
+    <%= text_field_tag :search, params[:search] %>
+
     <%= submit_tag "Search", :name => nil %>
-  </p>
-
+</p>
 <% end %>
-
-
 </div>
-
   
-
 
 
 

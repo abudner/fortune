@@ -179,8 +179,8 @@ header {
 
 #search {
 	float: right;
-	width: 290px;
-	padding: 30px 40px 0px 0px;
+	width: 200px;
+	padding: 10px 20px 0px 0px;
 }
 
 #search form {
@@ -195,7 +195,7 @@ header {
 }
 
 #search input {
-	float: left;
+	float: right;
 }
 
 #search-text {
@@ -209,7 +209,7 @@ header {
 }
 
 #search-submit {
-	float: left;
+	float: right;
 	width: 34px;
 	height: 29px;
 	background: url(../images/img17.jpg) no-repeat left top;
