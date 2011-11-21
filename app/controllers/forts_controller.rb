@@ -3,7 +3,7 @@ class FortsController < ApplicationController
   # GET /forts.xml
 
   def index
-    @forts = Fort.search(params[:search]).order(:source).page(params[:page]).per(2)
+    @forts = Fort.search(params[:search]).order(:source).page(params[:page]).per(4)
     
 
    respond_with(@forts)

@@ -51,4 +51,4 @@ gem "sass"
 gem "bourbon"
 gem "coffee-script"
 gem "execjs"
-gem "therubyracer"
+gem 'therubyracer'

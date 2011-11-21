@@ -17,8 +17,9 @@
     <span class="value"><%= @fort.body %></span>
 </p>  
 </div>
-  <div class="link">
-    <%= link_to 'Edit', edit_fort_path(@fort) %> | <%= link_to 'Back', forts_path %>
+  <div id="links">
+    <%= link_to '✎', edit_fort_path(@fort) %> | <%= link_to '⥄', 
+forts_path %>
   </div>
 </article>
 

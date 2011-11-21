@@ -310,6 +310,13 @@ header {
 
 /* Sidebar */
 
+#links {
+     font-size: 30px;
+
+
+}
+
+
 #sidebar {
 	float: right;
 	width: 150px;
@@ -482,7 +489,7 @@ display: block;
 height: 2em;
 left: 30px;
 margin-bottom: 100px;
-margin-left: 480px;
+margin-left: 600px;
 margin-right: 0px;
 margin-top: 305px;
 
